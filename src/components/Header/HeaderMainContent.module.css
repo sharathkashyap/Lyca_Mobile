@@ -1,0 +1,92 @@
+.header-main {
+  position: relative;
+  height: 84px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #d9d9d9;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+.space {
+  grid-column: span 7;
+}
+.logo {
+  position: relative;
+  top: 30%;
+  left: 30%;
+
+  width: 60%;
+  height: 50%;
+}
+.bundle {
+  position: relative;
+  top: 30%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+.recharge {
+  position: relative;
+  top: 30%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+.rate {
+  position: relative;
+  top: 30%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+.offer {
+  position: relative;
+  top: 30%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+.help {
+  position: relative;
+  top: 30%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+.cart {
+  position: relative;
+  top: 30%;
+  width: 30%;
+  height: 25%;
+}
+.user {
+  position: relative;
+  top: 30%;
+  width: 30%;
+  height: 25%;
+}
+.signin {
+  position: relative;
+  top: 30%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
