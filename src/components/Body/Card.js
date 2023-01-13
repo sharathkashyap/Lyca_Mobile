@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import classes from "./Card.module.css";
 //key={Math.random()} 
+
 const Card = (props) => {
     
   return (
@@ -22,7 +23,7 @@ const Card = (props) => {
                 <div  className={classes.middle}>
                   <div className={classes.simAmount}>{totalAmount}</div>
                   <div  className={classes.simValidity} >{card.simValidity}</div>
-                  <button className={classes.orderButton}>
+                  <button className={classes.orderButton} onClick={props.showPopUp}>
                     <div className={classes.orderButtonText}>
                     Order Sim
                         </div></button>
