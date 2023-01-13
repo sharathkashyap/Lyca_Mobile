@@ -1,54 +1,211 @@
 {
   "simData":[
-    {
-       "id":1,
-       "x":"",
-       "simType":"National",
-       "simValue":"10 GB",
-       "dataValue":"data",
-       "simAmount":7.0,
-       "simValidity":"30 days",
-       "detailedValue":"10GB national data",
-       "detailedCallDuration":"Unlimited national mins",
-       "detailedSMSDuration":"Unlimited national SMS",
-       "roamingDetails":"EU roaming"
+   {
+      "_index": "elasticsearch_index_lyca_pro",
+      "_type": "_doc",
+      "_id": "entity:commerce_product/8:en",
+      "_score": 1,
+      "_source": {
+        "_language": "en",
+        "bandwidth": [
+          "Unlimited"
+        ],
+        "body": [
+          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+        ],
+        "simAmount": [
+          20.000000
+        ],
+        "stores": [
+          1,
+          2
+        ],
+        "title": [
+          "National 2XPlus"
+        ],
+        "type": [
+          "physical"
+        ],
+        "type_1": [
+          "physical"
+        ],
+        "uid": [
+          1
+        ]
+      }
     },
     {
-       "id":2,
-       "x":"",
-       "simType":"National",
-       "simValue":"200 GB",
-       "simAmount":190.0,
-       "simValidity":"30 days",
-       "detailedValue":"10GB national data",
-       "detailedCallDuration":"Unlimited national mins",
-       "detailedSMSDuration":"Unlimited national SMS",
-       "roamingDetails":"EU roaming"
+      "_index": "elasticsearch_index_lyca_pro",
+      "_type": "_doc",
+      "_id": "entity:commerce_product/8:en",
+      "_score": 1,
+      "_source": {
+        "_language": "en",
+        "bandwidth": [
+          "Unlimited"
+        ],
+        "body": [
+          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+        ],
+        "simAmount": [
+          20.000000
+        ],
+        "stores": [
+          1,
+          2
+        ],
+        "title": [
+          "National 2XPlus"
+        ],
+        "type": [
+          "physical"
+        ],
+        "type_1": [
+          "physical"
+        ],
+        "uid": [
+          2
+        ]
+      }
     },
     {
-       "id":3,
-       "x":"",
-       "simType":"National",
-       "simValue":"100 GB",
-       "simAmount":90.0,
-       "simValidity":"30 days",
-       "detailedValue":"10GB national data",
-       "detailedCallDuration":"Unlimited national mins",
-       "detailedSMSDuration":"Unlimited national SMS",
-       "roamingDetails":"EU roaming"
+      "_index": "elasticsearch_index_lyca_pro",
+      "_type": "_doc",
+      "_id": "entity:commerce_product/8:en",
+      "_score": 1,
+      "_source": {
+        "_language": "en",
+        "bandwidth": [
+          "Unlimited"
+        ],
+        "body": [
+          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+        ],
+        "simAmount": [
+          20.000000
+        ],
+        "stores": [
+          1,
+          2
+        ],
+        "title": [
+          "National 2XPlus"
+        ],
+        "type": [
+          "physical"
+        ],
+        "type_1": [
+          "physical"
+        ],
+        "uid": [
+          2
+        ]
+      }
     },
     {
-       "id":4,
-       "x":"",
-       "simType":"National",
-       "simValue":"20 GB",
-       "simAmount":70.0,
-       "simValidity":"30 days",
-       "detailedValue":"10GB national data",
-       "detailedCallDuration":"Unlimited national mins",
-       "detailedSMSDuration":"Unlimited national SMS",
-       "roamingDetails":"EU roaming"
+      "_index": "elasticsearch_index_lyca_pro",
+      "_type": "_doc",
+      "_id": "entity:commerce_product/8:en",
+      "_score": 1,
+      "_source": {
+        "_language": "en",
+        "bandwidth": [
+          "Unlimited"
+        ],
+        "body": [
+          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+        ],
+        "simAmount": [
+          20.000000
+        ],
+        "stores": [
+          1,
+          2
+        ],
+        "title": [
+          "National 2XPlus"
+        ],
+        "type": [
+          "physical"
+        ],
+        "type_1": [
+          "physical"
+        ],
+        "uid": [
+          2
+        ]
+      }
+    },
+    {
+      "_index": "elasticsearch_index_lyca_pro",
+      "_type": "_doc",
+      "_id": "entity:commerce_product/8:en",
+      "_score": 1,
+      "_source": {
+        "_language": "en",
+        "bandwidth": [
+          "Unlimited"
+        ],
+        "body": [
+          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+        ],
+        "simAmount": [
+          20.000000
+        ],
+        "stores": [
+          1,
+          2
+        ],
+        "title": [
+          "National 2XPlus"
+        ],
+        "type": [
+          "physical"
+        ],
+        "type_1": [
+          "physical"
+        ],
+        "uid": [
+          2
+        ]
+      }
+    },
+    {
+      "_index": "elasticsearch_index_lyca_pro",
+      "_type": "_doc",
+      "_id": "entity:commerce_product/8:en",
+      "_score": 1,
+      "_source": {
+        "_language": "en",
+        "bandwidth": [
+          "Unlimited"
+        ],
+        "body": [
+          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+        ],
+        "simAmount": [
+          20.000000
+        ],
+        "stores": [
+          1,
+          2
+        ],
+        "title": [
+          "National 2XPlus"
+        ],
+        "type": [
+          "physical"
+        ],
+        "type_1": [
+          "physical"
+        ],
+        "uid": [
+          2
+        ]
+      }
     }
+
+
   ]
  
   

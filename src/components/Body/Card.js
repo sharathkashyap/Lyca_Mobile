@@ -1,22 +1,25 @@
 import React, { Fragment } from "react";
+import HorizontalScroll from "react-horizontal-scrolling";
 import classes from "./Card.module.css";
-//key={Math.random()} 
 
 const Card = (props) => {
     
   return (
     
-    <div className={classes.main}>
+    <HorizontalScroll>
     
-        {props.data.map((card) => {
-          const totalAmount = `€${card.simAmount.toFixed(2)}`;
+        {props.data.map((x) => {
+const card=x._source;
+console.log(card.body[0]);
+
+          const totalAmount = `€${card.simAmount[0].toFixed(2)}`;
           return (
             <Fragment>
               <div  key={card.id}  className={classes["card-contrainer"]}>
                 <div  className={classes.top}>
-                  <div className={classes.simType} >{card.simType}</div>
-                  <div  className={classes.simValue} >{card.simValue}</div>
-                  <div  className={classes.dataValue} >{card.dataValue}</div>
+                  <div className={classes.simType} >{card.title[0]}</div>
+                  <div  className={classes.simValue} >{card.bandwidth[0]}</div>
+                  <div  className={classes.dataValue} >data</div>
                   
 
                 </div>
@@ -28,19 +31,15 @@ const Card = (props) => {
                     Order Sim
                         </div></button>
                 </div>
-                <div className={classes.bottom}>
-                  
-                  <div className={classes.nationalData}>{card.detailedValue}</div>
-                  <div className={classes.nationalMins}>{card.detailedCallDuration}</div>
-                  <div className={classes.nationalSMS}>{card.detailedSMSDuration}</div>
-                  <div className={classes.roamingDetails}>{card.roamingDetails}</div>
+                <div className={classes.bottom} >
+                <div className={classes.nationalData} dangerouslySetInnerHTML={{ __html: card.body[0]}} />
                 </div>
               </div>
             </Fragment>
           );
         })}
       
-    </div>
+    </HorizontalScroll>
   );
 };
 export default Card;

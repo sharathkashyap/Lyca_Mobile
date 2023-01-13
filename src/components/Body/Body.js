@@ -6,59 +6,60 @@ import image from "../../assets/16-Million.jpg";
 import footer from "../../assets/footer.PNG";
 import lycaimage from "../../assets/lycamobile-app-new.webp";
 import Option from "./Option";
+import HorizontalScroll from "react-horizontal-scrolling";
 
 
-const simData = [
-  {
-    id: 1,
-    x: "",
-    simType: "National",
-    simValue: "10 GB",
-    dataValue: "data",
-    simAmount: 7.0,
-    simValidity: "30 days",
-    detailedValue: "10GB national data",
-    detailedCallDuration: "Unlimited national mins",
-    detailedSMSDuration: "Unlimited national SMS",
-    roamingDetails: "EU roaming",
-  },
-  {
-    id: 2,
-    x: "",
-    simType: "National",
-    simValue: "10 GB",
-    simAmount: 7.0,
-    simValidity: "30 days",
-    detailedValue: "10GB national data",
-    detailedCallDuration: "Unlimited national mins",
-    detailedSMSDuration: "Unlimited national SMS",
-    roamingDetails: "EU roaming",
-  },
-  {
-    id: 3,
-    x: "",
-    simType: "National",
-    simValue: "10 GB",
-    simAmount: 7.0,
-    simValidity: "30 days",
-    detailedValue: "10GB national data",
-    detailedCallDuration: "Unlimited national mins",
-    detailedSMSDuration: "Unlimited national SMS",
-    roamingDetails: "EU roaming",
-  },
-  {
-    id: 4,
-    x: "",
-    simType: "National",
-    simValue: "10 GB",
-    simAmount: 7.0,
-    simValidity: "30 days",
-    detailedValue: "10GB national data",
-    detailedCallDuration: "Unlimited national mins",
-    detailedSMSDuration: "Unlimited national SMS",
-    roamingDetails: "EU roaming",
-  },
-];
+// const simData = [
+//   {
+//     id: 1,
+//     x: "",
+//     simType: "National",
+//     simValue: "10 GB",
+//     dataValue: "data",
+//     simAmount: 7.0,
+//     simValidity: "30 days",
+//     detailedValue: "10GB national data",
+//     detailedCallDuration: "Unlimited national mins",
+//     detailedSMSDuration: "Unlimited national SMS",
+//     roamingDetails: "EU roaming",
+//   },
+//   {
+//     id: 2,
+//     x: "",
+//     simType: "National",
+//     simValue: "10 GB",
+//     simAmount: 7.0,
+//     simValidity: "30 days",
+//     detailedValue: "10GB national data",
+//     detailedCallDuration: "Unlimited national mins",
+//     detailedSMSDuration: "Unlimited national SMS",
+//     roamingDetails: "EU roaming",
+//   },
+//   {
+//     id: 3,
+//     x: "",
+//     simType: "National",
+//     simValue: "10 GB",
+//     simAmount: 7.0,
+//     simValidity: "30 days",
+//     detailedValue: "10GB national data",
+//     detailedCallDuration: "Unlimited national mins",
+//     detailedSMSDuration: "Unlimited national SMS",
+//     roamingDetails: "EU roaming",
+//   },
+//   {
+//     id: 4,
+//     x: "",
+//     simType: "National",
+//     simValue: "10 GB",
+//     simAmount: 7.0,
+//     simValidity: "30 days",
+//     detailedValue: "10GB national data",
+//     detailedCallDuration: "Unlimited national mins",
+//     detailedSMSDuration: "Unlimited national SMS",
+//     roamingDetails: "EU roaming",
+//   },
+// ];
 const serviceData = [
   {
     id: 1,
@@ -151,7 +152,9 @@ const Body = (props) => {
           </label>
         </div>
         <div className={classes.item3}>
+    
           <Card showPopUp={props.onShowPopUp} data={items} />
+          
         </div>
         <div className={classes.item4}>
           <button className={classes.viewAllButton}>

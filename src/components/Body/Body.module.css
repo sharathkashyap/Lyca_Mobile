@@ -18,7 +18,13 @@
   grid-area: header2;
 }
 .item3 {
-  grid-area: main;
+ width: 100%;
+ overflow: hidden;
+
+}
+.cardStuff
+{ display: block;
+overflow-x: scroll;
 }
 .item4 {
   grid-area: blah;
