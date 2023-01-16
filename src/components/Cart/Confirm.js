@@ -1,9 +1,15 @@
 //Check the sub-total and go to cart-->checkout
+//import { useNavigate } from 'react-router-dom'; 
 import { Fragment } from "react";
 import classes from "./Confirm.module.css";
 
 const Confirm = (props) => {
+  // const navigate = useNavigate();
 
+  // function handleClick(event) {
+
+  //   navigate('/cart');
+  // }
   return (
   <Fragment>
   <div className={classes.summaryDiv}>

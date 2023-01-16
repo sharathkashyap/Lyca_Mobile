@@ -18,8 +18,7 @@
   grid-area: header2;
 }
 .item3 {
- width: 100%;
- overflow: hidden;
+  grid-area: main;
 
 }
 .cardStuff

@@ -1,12 +1,18 @@
 import React, { Fragment } from "react";
+import { useNavigate } from 'react-router-dom'; 
 import HorizontalScroll from "react-horizontal-scrolling";
 import classes from "./Card.module.css";
 
 const Card = (props) => {
-    
+  const navigate = useNavigate();
+
+  function handleClick(event) {
+
+    navigate('/modal');
+  }
   return (
     
-    <HorizontalScroll>
+<div className={classes.main}>
     
         {props.data.map((x) => {
 const card=x._source;
@@ -26,7 +32,7 @@ console.log(card.body[0]);
                 <div  className={classes.middle}>
                   <div className={classes.simAmount}>{totalAmount}</div>
                   <div  className={classes.simValidity} >{card.simValidity}</div>
-                  <button className={classes.orderButton} onClick={props.showPopUp}>
+                  <button onSubmit={handleClick} className={classes.orderButton} onClick={props.showPopUp}>
                     <div className={classes.orderButtonText}>
                     Order Sim
                         </div></button>
@@ -39,7 +45,7 @@ console.log(card.body[0]);
           );
         })}
       
-    </HorizontalScroll>
+    </div>
   );
 };
 export default Card;

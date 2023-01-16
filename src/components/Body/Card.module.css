@@ -1,5 +1,8 @@
 .main {
-
+  padding-left: 5%;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 .space {
   grid-column: span 9;
