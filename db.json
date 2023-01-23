@@ -135,42 +135,7 @@
           2
         ]
       }
-    },
-    {
-      "_index": "elasticsearch_index_lyca_pro",
-      "_type": "_doc",
-      "_id": "entity:commerce_product/8:en",
-      "_score": 1,
-      "_source": {
-        "_language": "en",
-        "bandwidth": [
-          "Unlimited"
-        ],
-        "body": [
-          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-        ],
-        "simAmount": [
-          20.000000
-        ],
-        "stores": [
-          1,
-          2
-        ],
-        "title": [
-          "National 2XPlus"
-        ],
-        "type": [
-          "physical"
-        ],
-        "type_1": [
-          "physical"
-        ],
-        "uid": [
-          2
-        ]
-      }
     }
-
 
   ]
  

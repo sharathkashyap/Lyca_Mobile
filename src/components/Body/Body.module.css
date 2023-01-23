@@ -221,10 +221,3 @@ overflow-x: scroll;
     position: relative;
 
   }
-  .footerImage
-  {
-      max-height: 600px; 
-      width: 100%;
-      filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-  }

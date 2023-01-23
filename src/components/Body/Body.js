@@ -3,10 +3,10 @@ import Card from "./Card";
 import classes from "./Body.module.css";
 import Service from "./Service";
 import image from "../../assets/16-Million.jpg";
-import footer from "../../assets/footer.PNG";
 import lycaimage from "../../assets/lycamobile-app-new.webp";
 import Option from "./Option";
 import HorizontalScroll from "react-horizontal-scrolling";
+import Footer from "../Footer/Footer";
 
 
 // const simData = [
@@ -153,7 +153,7 @@ const Body = (props) => {
         </div>
         <div className={classes.item3}>
     
-          <Card showPopUp={props.onShowPopUp} data={items} />
+          <Card showPopUp={props.onShowPopUp}  data={items} />
           
         </div>
         <div className={classes.item4}>
@@ -211,9 +211,8 @@ const Body = (props) => {
             alt="playstore"
           />
         </div>
-        <div className={classes.item13}>
-          <img className={classes.footerImage} src={footer} alt="Footer" />
-        </div>
+      
+    
       </div>
     </Fragment>
   );

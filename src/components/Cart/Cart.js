@@ -17,7 +17,7 @@ const Cart = (props) => {
  <Check onClick={showconfirmHandler}/>
       )}
       {!confirmIsClicked && (
-       <Confirm onClose={props.onClose}/>
+       <Confirm onShowMainCart={props.onShowMainCart} onClose={props.onClose}/>
       )}
     </Modal>
   );
