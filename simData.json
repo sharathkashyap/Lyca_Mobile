@@ -1,142 +1,176 @@
 {
   "simData":[
-   {
-      "_index": "elasticsearch_index_lyca_pro",
-      "_type": "_doc",
-      "_id": "entity:commerce_product/8:en",
-      "_score": 1,
-      "_source": {
-        "_language": "en",
-        "bandwidth": [
-          "Unlimited"
-        ],
-        "body": [
-          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-        ],
-        "simAmount": [
-          20.000000
-        ],
-        "stores": [
-          1,
-          2
-        ],
-        "title": [
-          "National 2XPlus"
-        ],
-        "type": [
-          "physical"
-        ],
-        "type_1": [
-          "physical"
-        ],
-        "uid": [
-          1
-        ]
+      {
+          "_index": "elasticsearch_index_lyca_pro",
+          "_type": "_doc",
+          "_id": "entity:commerce_product/9:en",
+          "_score": 1.0,
+          "_source": {
+              "_language": "en",
+              "bandwidth": [
+                  "1GB"
+              ],
+              "body": [
+                  "<p>Free Calls</p>\r\n\r\n<p>Free SMS</p>\r\n\r\n<p>Data upTo 1GB for 30 days</p>\r\n"
+              ],
+              "price": [
+                  "3.000000"
+              ],
+              "stores": [
+                  1,
+                  2
+              ],
+              "title": [
+                  "National Free"
+              ],
+              "type": [
+                  "physical"
+              ],
+              "type_1": [
+                  "physical"
+              ],
+              "uid": [
+                  1
+              ]
+          }
+      },
+      {
+          "_index": "elasticsearch_index_lyca_pro",
+          "_type": "_doc",
+          "_id": "entity:commerce_product/5:en",
+          "_score": 1.0,
+          "_source": {
+              "_language": "en",
+              "bandwidth": [
+                  "10GB"
+              ],
+              "body": [
+                  "<p>10 GB Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n"
+              ],
+              "price": [
+                  "7.000000"
+              ],
+              "stores": [
+                  1,
+                  2
+              ],
+              "title": [
+                  "National"
+              ],
+              "type": [
+                  "physical"
+              ],
+              "type_1": [
+                  "physical"
+              ],
+              "uid": [
+                  1
+              ]
+          }
+      },
+      {
+          "_index": "elasticsearch_index_lyca_pro",
+          "_type": "_doc",
+          "_id": "entity:commerce_product/6:en",
+          "_score": 1.0,
+          "_source": {
+              "_language": "en",
+              "bandwidth": [
+                  "15GB"
+              ],
+              "body": [
+                  "<p>15 GB National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n"
+              ],
+              "price": [
+                  "10.000000"
+              ],
+              "stores": [
+                  1,
+                  2
+              ],
+              "title": [
+                  "National Plus"
+              ],
+              "type": [
+                  "physical"
+              ],
+              "type_1": [
+                  "physical"
+              ],
+              "uid": [
+                  1
+              ]
+          }
+      },
+      {
+          "_index": "elasticsearch_index_lyca_pro",
+          "_type": "_doc",
+          "_id": "entity:commerce_product/7:en",
+          "_score": 1.0,
+          "_source": {
+              "_language": "en",
+              "bandwidth": [
+                  "40 GB"
+              ],
+              "body": [
+                  "<p>40GB National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n"
+              ],
+              "price": [
+                  "17.000000"
+              ],
+              "stores": [
+                  1,
+                  2
+              ],
+              "title": [
+                  "National XPlus"
+              ],
+              "type": [
+                  "physical"
+              ],
+              "type_1": [
+                  "physical"
+              ],
+              "uid": [
+                  1
+              ]
+          }
+      },
+      {
+          "_index": "elasticsearch_index_lyca_pro",
+          "_type": "_doc",
+          "_id": "entity:commerce_product/8:en",
+          "_score": 1.0,
+          "_source": {
+              "_language": "en",
+              "bandwidth": [
+                  "Unlimited"
+              ],
+              "body": [
+                  "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
+              ],
+              "price": [
+                  "20.000000"
+              ],
+              "stores": [
+                  1,
+                  2
+              ],
+              "title": [
+                  "National 2XPlus"
+              ],
+              "type": [
+                  "physical"
+              ],
+              "type_1": [
+                  "physical"
+              ],
+              "uid": [
+                  1
+              ]
+          }
       }
-    },
-    {
-      "_index": "elasticsearch_index_lyca_pro",
-      "_type": "_doc",
-      "_id": "entity:commerce_product/8:en",
-      "_score": 1,
-      "_source": {
-        "_language": "en",
-        "bandwidth": [
-          "Unlimited"
-        ],
-        "body": [
-          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-        ],
-        "simAmount": [
-          20.000000
-        ],
-        "stores": [
-          1,
-          2
-        ],
-        "title": [
-          "National 2XPlus"
-        ],
-        "type": [
-          "physical"
-        ],
-        "type_1": [
-          "physical"
-        ],
-        "uid": [
-          2
-        ]
-      }
-    },
-    {
-      "_index": "elasticsearch_index_lyca_pro",
-      "_type": "_doc",
-      "_id": "entity:commerce_product/8:en",
-      "_score": 1,
-      "_source": {
-        "_language": "en",
-        "bandwidth": [
-          "Unlimited"
-        ],
-        "body": [
-          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-        ],
-        "simAmount": [
-          20.000000
-        ],
-        "stores": [
-          1,
-          2
-        ],
-        "title": [
-          "National 2XPlus"
-        ],
-        "type": [
-          "physical"
-        ],
-        "type_1": [
-          "physical"
-        ],
-        "uid": [
-          2
-        ]
-      }
-    },
-    {
-      "_index": "elasticsearch_index_lyca_pro",
-      "_type": "_doc",
-      "_id": "entity:commerce_product/8:en",
-      "_score": 1,
-      "_source": {
-        "_language": "en",
-        "bandwidth": [
-          "Unlimited"
-        ],
-        "body": [
-          "<p>Unlimited National Data</p>\r\n\r\n<p>Unlimited National Minutes</p>\r\n\r\n<p>Unlimited National SMS</p>\r\n\r\n<p>EU Roaming</p>\r\n\r\n<p>&nbsp;</p>\r\n"
-        ],
-        "simAmount": [
-          20.000000
-        ],
-        "stores": [
-          1,
-          2
-        ],
-        "title": [
-          "National 2XPlus"
-        ],
-        "type": [
-          "physical"
-        ],
-        "type_1": [
-          "physical"
-        ],
-        "uid": [
-          2
-        ]
-      }
-    }
-
+  
   ]
  
   

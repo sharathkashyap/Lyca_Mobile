@@ -1,15 +1,9 @@
 import React, { Fragment } from "react";
-import { useNavigate } from 'react-router-dom'; 
-import HorizontalScroll from "react-horizontal-scrolling";
+
 import classes from "./Card.module.css";
 
 const Card = (props) => {
-  const navigate = useNavigate();
-
-  function handleClick(event) {
-
-    navigate('/modal');
-  }
+  
   return (
     
 <div className={classes.main}>
@@ -18,7 +12,7 @@ const Card = (props) => {
 const card=x._source;
 console.log(card.body[0]);
 
-          const totalAmount = `€${card.simAmount[0].toFixed(2)}`;
+          const totalAmount = `€${parseFloat(card.price[0]).toFixed(2)}`;
           return (
             <Fragment>
               <div  key={card.id}  className={classes["card-contrainer"]}>
@@ -32,7 +26,7 @@ console.log(card.body[0]);
                 <div  className={classes.middle}>
                   <div className={classes.simAmount}>{totalAmount}</div>
                   <div  className={classes.simValidity} >{card.simValidity}</div>
-                  <button onSubmit={handleClick} className={classes.orderButton} onClick={props.showPopUp}>
+                  <button  className={classes.orderButton} onClick={props.showPopUp}>
                     <div className={classes.orderButtonText}>
                     Order Sim
                         </div></button>

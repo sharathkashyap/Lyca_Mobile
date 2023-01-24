@@ -109,13 +109,20 @@ const Body = (props) => {
         const [isLoaded, setIsLoaded] = useState(false);
         const [items, setItems] = useState([]);
         useEffect(() => {
-            fetch("http://localhost:3000/simData")
+            //fetch("http://localhost:3000/simData")
+            fetch('http://localhost:9200/elasticsearch_index_lyca_pro/_search?pretty=')
            .then(res => res.json())
               .then(
                 (result) => {
                   console.log(result);
+                  let results = [];
+                  result.hits.hits.forEach(element => {
+                    console.log(element);
+                    results.push(element);
+
+                  });;
                   setIsLoaded(true);
-                  setItems(result);
+                  setItems(results);
                 },
                 // Note: it's important to handle errors here
                 // instead of a catch() block so that we don't swallow
