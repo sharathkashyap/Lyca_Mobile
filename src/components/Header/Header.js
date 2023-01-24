@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import {Fragment} from "react";
 import Carousel from "./Carousel";
 import classes from "./Header.module.css";
 import HeaderContent from "./HeaderContent";
@@ -8,10 +8,10 @@ const Header = (props) => {
     <Fragment>
       <div className={classes["grid-container"]}>
         <div className={classes.item1}>
-          <HeaderContent></HeaderContent>
+          <HeaderContent />
         </div>
         <div className={classes.item2}>
-          <HeaderMainContent />
+          <HeaderMainContent {...props} />
         </div>
         <div className={classes.item3}>
           <Carousel />

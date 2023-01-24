@@ -1,4 +1,4 @@
-import React, { Fragment,useState, useEffect } from "react";
+import React, {Fragment, useState, useEffect} from "react";
 import Card from "./Card";
 import classes from "./Body.module.css";
 import Service from "./Service";
@@ -7,7 +7,6 @@ import footer from "../../assets/footer.PNG";
 import lycaimage from "../../assets/lycamobile-app-new.webp";
 import Option from "./Option";
 import HorizontalScroll from "react-horizontal-scrolling";
-
 
 // const simData = [
 //   {
@@ -104,50 +103,45 @@ const onAppStoreClick = () => {
 };
 
 const Body = (props) => {
-   // try{
-        const [error, setError] = useState(null);
-        const [isLoaded, setIsLoaded] = useState(false);
-        const [items, setItems] = useState([]);
-        useEffect(() => {
-            //fetch("http://localhost:3000/simData")
-            fetch('http://localhost:9200/elasticsearch_index_lyca_pro/_search?pretty=')
-           .then(res => res.json())
-              .then(
-                (result) => {
-                  console.log(result);
-                  let results = [];
-                  result.hits.hits.forEach(element => {
-                    console.log(element);
-                    results.push(element);
+  // try{
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+  useEffect(() => {
+    //fetch("http://localhost:3000/simData")
+    fetch("http://localhost:9200/elasticsearch_index_lyca_pro/_search?pretty=")
+      //.then((res) => res.json())
+      .then(
+        (result) => {
+          console.log(result);
+          let results = [];
+          result.hits.hits.forEach((element) => {
+            console.log(element);
+            results.push(element);
+          });
+          setIsLoaded(true);
+          setItems(results);
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
 
-                  });;
-                  setIsLoaded(true);
-                  setItems(results);
-                },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
-                (error) => {
-                  setIsLoaded(true);
-                  setError(error);
-                }
-              )
-          }, [])
-        
-         
-        //}
-        // catch(exceptions)
-        // {
-        //     console.log(exceptions);
-        // }
-        
+  //}
+  // catch(exceptions)
+  // {
+  //     console.log(exceptions);
+  // }
+
   return (
-    
     <Fragment>
       <div className={classes["grid-container"]}>
-        <div>
-            
-        </div>
+        <div></div>
         <div className={classes.item1}>
           <label>Great value SIM only deals</label>
         </div>
@@ -159,9 +153,7 @@ const Body = (props) => {
           </label>
         </div>
         <div className={classes.item3}>
-    
           <Card showPopUp={props.onShowPopUp} data={items} />
-          
         </div>
         <div className={classes.item4}>
           <button className={classes.viewAllButton}>
