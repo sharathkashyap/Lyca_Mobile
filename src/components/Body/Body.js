@@ -103,14 +103,32 @@ const onAppStoreClick = () => {
 };
 
 const Body = (props) => {
+  document.cookie = "connect.sid=s%3A_9c3LkWU8QJzOH86nte5Hoc707OwSxGW.7wsLGm4VPD0uadi5BpRoB0EmD0irfQ3QQ3N8sSNXnUQ; SESS49960de5880e8c687434170f6476605b=t6T%2C9tQA3mysl3Gu-Uzo9bk6dOCUabRfMBlz7HVPKbKAOGWP"
   // try{
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   useEffect(() => {
+    fetch('http://localhost:8080/user/login?_format=json', {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json',
+      'X-CSRF-Token': 'tYDhBLoxEbGbpuO6YX-5H62UuJdn5D7ZOG5AqCBoyPs'
+      },
+      body: JSON.stringify({
+      'name':"Sharath",
+      'pass' : "Sharath",
+      }),
+    })
+    .then(response => response.json())
+    .then(data =>{
+      console.log('sddddsuccess', data);
+      document.CSRF_TOKEN = data.csrf_token;
+      }
+    );
     //fetch("http://localhost:3000/simData")
     fetch("http://localhost:9200/elasticsearch_index_lyca_pro/_search?pretty=")
-      //.then((res) => res.json())
+      .then((res) => res.json())
       .then(
         (result) => {
           console.log(result);
