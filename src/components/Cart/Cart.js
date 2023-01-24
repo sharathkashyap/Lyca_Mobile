@@ -6,10 +6,12 @@ import Confirm from "./Confirm";
 import {Buffer} from 'buffer';
 
 const Cart = (props) => {
+  console.log(props);
   const [confirmIsClicked, setconfirmIsClicked] = useState(true);
   const showconfirmHandler = () => {
     try {
       const encodedString = Buffer.from("Sharath:Sharath").toString('base64');
+      console.log("ID to be invoked",props.data.data.product_id[0].toString());
       /*fetch("http://localhost:8080/cart/1/items?_format=json",{
         method: 'DELETE',
         headers: {
@@ -27,10 +29,10 @@ const Cart = (props) => {
           },
           //credentials: 'include',
           body: JSON.stringify([{
-            purchased_entity_type: "commerce_product_variation",
-            purchased_entity_id: "national",
+            purchased_entity_type: props.data.data.entity_type[0]+"_variation",
+            purchased_entity_id: props.data.data.product_id[0].toString(),
             quantity: "1",
-            combine: "true"
+            combine: true
           }]),
         }).then(() => {
           setconfirmIsClicked(false);
