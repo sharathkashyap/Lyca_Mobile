@@ -40,12 +40,17 @@ const Check = (props) => {
           </div>
         </div>
         <div className={classes["card-contrainer4"]}>
-          <div className={classes.eSIMContent1}>
+          <img
+            className={classes.info}
+            src="https://static.thenounproject.com/png/464155-200.png"
+            alt="info"
+          ></img>
+          <div onClick={props.onClick} className={classes.eSIMContent1}>
             What's an eSIM
             <br />
-            <div className={classes.eSIMContent2}>
-              See compatible list of phones
-            </div>
+          </div>
+          <div onClick={props.onClick} className={classes.eSIMContent2}>
+            See compatible list of phones
           </div>
         </div>
       </div>

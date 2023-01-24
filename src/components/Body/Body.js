@@ -3,10 +3,10 @@ import Card from "./Card";
 import classes from "./Body.module.css";
 import Service from "./Service";
 import image from "../../assets/16-Million.jpg";
-import footer from "../../assets/footer.PNG";
 import lycaimage from "../../assets/lycamobile-app-new.webp";
 import Option from "./Option";
 import HorizontalScroll from "react-horizontal-scrolling";
+import Footer from "../Footer/Footer";
 
 // const simData = [
 //   {
@@ -209,9 +209,6 @@ const Body = (props) => {
             src="https://s3-eu-west-2.amazonaws.com/lycamobileukwebsite/lycauk/dev/lycamobile-uk-cms/wp-content/uploads/2022/06/02065750/app-store-2.webp"
             alt="playstore"
           />
-        </div>
-        <div className={classes.item13}>
-          <img className={classes.footerImage} src={footer} alt="Footer" />
         </div>
       </div>
     </Fragment>

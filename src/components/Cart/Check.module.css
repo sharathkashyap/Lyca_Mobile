@@ -47,7 +47,6 @@
     width: 155px;
     height: 200px;
     overflow: hidden;
-  
     border: 2px solid #000000;
     padding: 0px 15px;
     background: #ffffff;
@@ -122,7 +121,7 @@
   }
   .phoneSIMContent {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     color: black;
     padding-top: 5px;
@@ -131,7 +130,7 @@
   .eSIMContent1 {
     color: blue;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
     position: absolute;
     padding-top: 5px;
@@ -139,12 +138,25 @@
   }
   .eSIMContent2 {
     color: blue;
+    position: relative;
+    left: 10%;
     font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 11px;
     padding-top: 2px;
   }
-  
+  .eSIMContent1:hover
+  {
+    cursor: pointer;
+    text-decoration: underline;
+
+  }
+  .eSIMContent2:hover
+  {
+    cursor: pointer;
+    text-decoration: underline;
+
+  }
   .phoneSIM {
     position: relative;
     left: 10%;
@@ -196,4 +208,13 @@
       font-style: normal;
       font-weight: 500;
       font-size: 15px;
+    }
+    .info
+    {
+      width: 12%;
+      height: 40%;
+      position: relative;
+      top: 25%;
+      right: 7%;
+  
     }

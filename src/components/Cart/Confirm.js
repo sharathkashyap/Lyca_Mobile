@@ -39,7 +39,7 @@ const Confirm = (props) => {
     </div>
   </div>
   <div>
-    <button className={classes.cartButton}>
+    <button onClick={props.onShowMainCart} className={classes.cartButton}>
       <div className={classes.cartButtonText}>Go to cart</div>
     </button>
   </div>

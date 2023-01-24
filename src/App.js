@@ -6,6 +6,8 @@ import Cart from "./components/Cart/Cart";
 import reducer from "./reducers";
 import MainCart from "./components/Cart/MainCart";
 import Modal from "./components/Cart/Modal";
+
+import Footer from "./components/Footer/Footer";
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false); //use state for more than one conditions| here, to show or not show carts
   const [state, dispatch] = useReducer(reducer);
@@ -28,6 +30,7 @@ function App() {
         </Modal>
       )}
       {cartIsShown && <Cart onClose={hideCartHandler} data={state} />}
+      <Footer />
     </div>
   );
 }
